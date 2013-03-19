@@ -16,7 +16,7 @@
 * 112897780 （研究群，非水群）
 * 161233537 （水群）
 * 185516069 （编程群）
-* [[[152982402 （福|利群）]]]
+* [[[152982402 （福|ORZ|利群）]]]
 
 ### HI群
 
@@ -117,12 +117,12 @@
 ### Tetris Friends
 
 * [Tetris Friends](http://www.tetrisfriends.com/)
-* [Tetris Friends](http://apps.facebook.com/tetrisfriends/)（Face|Book，需翻|墙）
+* [Tetris Friends](http://apps.facebook.com/tetrisfriends/)（Face|ORZ|Book，需翻|ORZ|墙）
 
 ### Tetris Battle
 
-* [Tetris Battle](http://www.tetrisbattle.com/)（需翻|墙）
-* [Tetris Battle](http://apps.facebook.com/tetris_battle/)（Face|Book，需翻|墙）
+* [Tetris Battle](http://www.tetrisbattle.com/)（需翻|ORZ|墙）
+* [Tetris Battle](http://apps.facebook.com/tetris_battle/)（Face|ORZ|Book，需翻|ORZ|墙）
 
 ### BlockBox
 

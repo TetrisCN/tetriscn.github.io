@@ -11,7 +11,7 @@
             $(function(){
                 $.get("main.md",function(md){
                     var html=markdown.toHTML(md);
-                    html=html.replace(/\|/g,"<span class='hidden'>ORZ</span>")
+                    html=html.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>")
                     html=html.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
                     $("body").html(html);
                 });
