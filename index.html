@@ -10,8 +10,8 @@
         <script type="text/javascript">
             $(function(){
                 var list=null;
-                var left=$("#left");
-                var main=$("#main");
+                var left=$("#left-inner");
+                var main=$("#main-inner");
                 $("body").on("click","a",function(e){
                     var a=$(e.target);
                     var data=a.attr("data");
@@ -80,11 +80,11 @@
                 padding: 10px;
                 border: 1px solid black;
                 font-size: 32px;
-                margin-bottom: 10px;
             }
             #cols
             {
                 zoom: 1;
+                overflow: hidden;
             }
             #main-col
             {
@@ -97,7 +97,13 @@
             }
             #main
             {
-                border: 1px solid black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding-bottom: 9999px;
+                margin-bottom: -9999px;
+            }
+            #main-inner
+            {
                 padding: 10px;
             }
             #left-col
@@ -108,14 +114,19 @@
             }
             #left
             {
-                border: 1px solid black;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                padding-bottom: 9999px;
+                margin-bottom: -9999px;
+            }
+            #left-inner
+            {
                 padding: 10px;
             }
             #footer
             {
                 padding: 10px;
                 border: 1px solid black;
-                margin-top: 10px;
                 text-align: center;
             }
         </style>
@@ -128,11 +139,15 @@
             <div id="cols">
                 <div id="main-col">
                     <div id="main-warp">
-                        <div id="main"></div>
+                        <div id="main">
+                            <div id="main-inner"></div>
+                        </div>
                     </div>
                 </div>
                 <div id="left-col">
-                    <div id="left"></div>
+                    <div id="left">
+                        <div id="left-inner"></div>
+                    </div>
                 </div>
             </div>
             <div id="footer">
