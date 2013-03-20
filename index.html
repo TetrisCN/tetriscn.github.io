@@ -23,7 +23,6 @@
                 function convert(str){
                     str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
                     str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
-                    str=str.replace(/ /g,"&nbsp;");
                     return str;
                 }
                 function load(name){
