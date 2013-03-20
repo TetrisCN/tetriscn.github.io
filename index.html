@@ -36,11 +36,13 @@
                 $.getJSON("main.json",function(json){
                     list=json;
                     var html="";
+                    html+="<ul>";
                     for(var i=0;i<list.list.length;i++){
-                        html+="<div>";
+                        html+="<li>";
                         html+="<a href='#' data='"+list.list[i]+"'>"+convert(list.data[list.list[i]].name)+"</a>";
-                        html+="</div>";
+                        html+="</li>";
                     }
+                    html+="</ul>";
                     left.html(html);
                     load("main");
                 });
@@ -60,6 +62,14 @@
             ul
             {
                 padding-left: 40px;
+            }
+            .hidden
+            {
+                display: none;
+            }
+            .black
+            {
+                background-color: black;
             }
             #container
             {
@@ -101,13 +111,12 @@
                 border: 1px solid black;
                 padding: 10px;
             }
-            .hidden
+            #footer
             {
-                display: none;
-            }
-            .black
-            {
-                background-color: black;
+                padding: 10px;
+                border: 1px solid black;
+                margin-top: 10px;
+                text-align: center;
             }
         </style>
     </head>
@@ -125,6 +134,9 @@
                 <div id="left-col">
                     <div id="left"></div>
                 </div>
+            </div>
+            <div id="footer">
+                Copyright &copy;2013 IntPtr All rights reserved
             </div>
         </div>
     </body>
