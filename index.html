@@ -12,11 +12,14 @@
                 var list=null;
                 var left=$("#left-inner");
                 var main=$("#main-inner");
+                var as=null;
                 var datas={};
                 $("body").on("click","a",function(e){
                     var a=$(e.target);
                     var data=a.attr("data");
                     if(data){
+                        as.removeClass("on");
+                        a.addClass("on");
                         load(data);
                     }else{
                         window.open(a.attr("href"),"_blank");
@@ -52,6 +55,7 @@
                     }
                     html+="</ul>";
                     left.html(html);
+                    as=left.find("a");
                     var hash=window.location.hash.replace(/^#/,"");
                     if(hash){
                         load(hash);
@@ -94,6 +98,11 @@
                 border: 1px solid black;
                 font-size: 32px;
                 font-weight: bolder;
+            }
+            #header a.on
+            {
+                font-weight: bolder;
+                color: black;
             }
             #cols
             {
