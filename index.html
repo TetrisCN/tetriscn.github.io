@@ -9,18 +9,88 @@
         <script type="text/javascript" src="libs/markdown.js"></script>
         <script type="text/javascript">
             $(function(){
-                $.get("main.md",function(md){
-                    var html=markdown.toHTML(md);
-                    html=html.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>")
-                    html=html.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
-                    $("body").html(html);
+                var list=null;
+                var left=$("#left");
+                var main=$("#main");
+                $("body").on("click","a",function(e){
+                    var a=$(e.target);
+                    var href=a.attr("href");
+                    if(a.slice(0,1)=="#"){
+                        load(a.slice(1));
+                    }
+                });
+                function load(name){
+                    if(list.data[name]){
+                        $.get(list.data[name].data,function(md){
+                            var html=markdown.toHTML(md);
+                            html=html.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
+                            html=html.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
+                            main.html(html);
+                        });
+                    }
+                }
+                $.getJSON("main.json",function(json){
+                    list=json;
+                    var html="";
+                    for(var i=0;i<list.list.length;i++){
+                        html+="<div>";
+                        html+="<a href='#"+list.list[i]+"'>"+list.data[list.list[i]].name+"</a>";
+                        html+="</div>";
+                    }
+                    load("main");
                 });
             });
         </script>
         <style type="text/css">
-            #md
+            *
             {
-                display: none;
+                margin: 0;
+                padding: 0;
+            }
+            html,body
+            {
+                width: 100%;
+                height: 100%;
+            }
+            #container
+            {
+                padding: 10px;
+            }
+            #header
+            {
+                padding: 10px;
+                border: 1px solid black;
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            #cols
+            {
+                zoom: 1;
+            }
+            #main-col
+            {
+                float: left;
+                width: 100%;
+            }
+            #main-warp
+            {
+                margin-left: 250px;
+            }
+            #main
+            {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            #left-col
+            {
+                width: 240px;
+                margin-left: -100%;
+                float: left;
+            }
+            #left
+            {
+                border: 1px solid black;
+                padding: 10px;
             }
             .hidden
             {
@@ -33,6 +103,20 @@
         </style>
     </head>
     <body>
-        <h1>Loading...</h1>
+        <div id="container">
+            <div id="header">
+                俄罗斯方块吧导航
+            </div>
+            <div id="cols">
+                <div id="main-col">
+                    <div id="main-warp">
+                        <div id="main"></div>
+                    </div>
+                </div>
+                <div id="left-col">
+                    <div id="left"></div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

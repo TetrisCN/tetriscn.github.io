@@ -1,0 +1,31 @@
+{
+    "list":[
+        "main",
+        "link",
+        "group",
+        "download",
+        "web"
+    ],
+    "data":{
+        "main":{
+            "name":"首页",
+            "data":"main.md"
+        },
+        "link":{
+            "name":"链接汇总",
+            "data":"link.md"
+        },
+        "group":{
+            "name":"官方群号",
+            "data":"group.md"
+        },
+        "download":{
+            "name":"游戏下载",
+            "data":"download.md"
+        },
+        "web":{
+            "name":"网页游戏",
+            "data":"web.md"
+        }
+    }
+}
