@@ -15,14 +15,15 @@
                 $("body").on("click","a",function(e){
                     var a=$(e.target);
                     var data=a.attr("data");
-                    if(data.slice(0,1)=="#"){
-                        load(data.slice(1));
+                    if(data){
+                        load(data);
                     }
+                    e.preventDefault();
                 });
                 function convert(str){
                     str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
                     str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
-                    str=str.replace(" ","&nbsp;");
+                    str=str.replace(/\s/,"&nbsp;");
                     return str;
                 }
                 function load(name){
