@@ -14,18 +14,21 @@
                 var main=$("#main");
                 $("body").on("click","a",function(e){
                     var a=$(e.target);
-                    var href=a.attr("href");
-                    if(a.slice(0,1)=="#"){
-                        load(a.slice(1));
+                    var data=a.attr("data");
+                    if(data.slice(0,1)=="#"){
+                        load(data.slice(1));
                     }
                 });
+                function convert(str){
+                    str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
+                    str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
+                    str=str.replace(" ","&nbsp;");
+                    return str;
+                }
                 function load(name){
                     if(list.data[name]){
                         $.get(list.data[name].data,function(md){
-                            var html=markdown.toHTML(md);
-                            html=html.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
-                            html=html.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
-                            main.html(html);
+                            main.html(convert(markdown.toHTML(md)));
                         });
                     }
                 }
@@ -34,7 +37,7 @@
                     var html="";
                     for(var i=0;i<list.list.length;i++){
                         html+="<div>";
-                        html+="<a href='#"+list.list[i]+"'>"+list.data[list.list[i]].name+"</a>";
+                        html+="<a href='#' data='"+list.list[i]+"'>"+convert(list.data[list.list[i]].name)+"</a>";
                         html+="</div>";
                     }
                     left.html(html);
