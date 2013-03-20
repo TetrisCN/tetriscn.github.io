@@ -29,15 +29,16 @@
                     return str;
                 }
                 function load(name){
-                    if(datas[name]){
-                        main.html(datas[name]);
-                    }else{
-                        if(list.data[name]){
+                    if(list.data[name]){
+                        if(datas[name]){
+                            main.html(datas[name]);
+                        }else{
                             $.get(list.data[name].data,function(md){
                                 datas[name]=convert(markdown.toHTML(md));
                                 main.html(datas[name]);
                             });
                         }
+                        window.location.hash="#"+name;
                     }
                 }
                 $.getJSON("main.json",function(json){
@@ -51,7 +52,12 @@
                     }
                     html+="</ul>";
                     left.html(html);
-                    load("main");
+                    var hash=window.location.hash.replace(/^#/,"");
+                    if(hash){
+                        load(hash);
+                    }else{
+                        load("main");
+                    }
                 });
             });
         </script>
