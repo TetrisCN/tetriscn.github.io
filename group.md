@@ -14,3 +14,7 @@
 ## YY群
 
 * [48406063](http://www.yy.com/go.html#48406063)
+
+## IRC
+
+* [quakenet.org#tetris-cn](http://webchat.quakenet.org/?channels=tetris-cn)
