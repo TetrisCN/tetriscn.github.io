@@ -12,6 +12,7 @@
                 var list=null;
                 var left=$("#left-inner");
                 var main=$("#main-inner");
+                var datas={};
                 $("body").on("click","a",function(e){
                     var a=$(e.target);
                     var data=a.attr("data");
@@ -26,10 +27,15 @@
                     return str;
                 }
                 function load(name){
-                    if(list.data[name]){
-                        $.get(list.data[name].data,function(md){
-                            main.html(convert(markdown.toHTML(md)));
-                        });
+                    if(datas[name]){
+                        main.html(datas[html]);
+                    }else{
+                        if(list.data[name]){
+                            $.get(list.data[name].data,function(md){
+                                datas[name]=convert(markdown.toHTML(md));
+                                main.html(datas[name]);
+                            });
+                        }
                     }
                 }
                 $.getJSON("main.json",function(json){
