@@ -28,7 +28,7 @@
                 }
                 function load(name){
                     if(datas[name]){
-                        main.html(datas[html]);
+                        main.html(datas[name]);
                     }else{
                         if(list.data[name]){
                             $.get(list.data[name].data,function(md){
