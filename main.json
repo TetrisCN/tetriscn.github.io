@@ -4,8 +4,8 @@
         "link",
         "group",
         "download",
-        "introduction",
-        "web"
+        "web",
+        "introduction"
     ],
     "data":{
         "main":{
@@ -23,6 +23,10 @@
         "download":{
             "name":"游戏下载",
             "url":"download.md"
+        },
+        "web":{
+            "name":"网页游戏",
+            "url":"web.md"
         },
         "introduction":{
             "name":"游戏介绍",
@@ -45,10 +49,6 @@
                     "url":"tgm.md"
                 }
             }
-        },
-        "web":{
-            "name":"网页游戏",
-            "url":"web.md"
         },
         "black":{
             "name":"黑历史",
