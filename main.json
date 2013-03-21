@@ -49,6 +49,10 @@
         "web":{
             "name":"网页游戏",
             "url":"web.md"
+        },
+        "black":{
+            "name":"黑历史",
+            "url":"black.md"
         }
     }
 }
