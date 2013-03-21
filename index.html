@@ -74,7 +74,7 @@
                             now=name;
                             window.location.hash="#"+name;
                             as.removeClass("on");
-                            as.filter("a[data="+name+"]").addClass("on");
+                            as.filter("a[data="+name.replace(/\./g,"\\.")+"]").addClass("on");
                         }
                     }
                 }
