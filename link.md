@@ -6,3 +6,4 @@
 * [tetrisconcept](http://tetrisconcept.net/)
 * [Tetris Online Poland](http://tetrisonline.pl/)
 * [俄罗斯方块中文论坛](http://bbs.tetriscn.tk/)
+* [俄罗斯方块吧官方水楼](http://tieba.baidu.com/p/990595123)
