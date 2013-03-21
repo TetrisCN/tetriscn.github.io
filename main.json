@@ -27,12 +27,21 @@
         "introduction":{
             "name":"游戏介绍",
             "list":[
-                "top"
+                "top",
+                "nullpomino"
             ],
             "data":{
                 "top":{
                     "name":"TOP介绍",
                     "url":"top.md"
+                },
+                "nullpomino":{
+                    "name":"NullpoMino介绍",
+                    "url":"nullpomino.md"
+                },
+                "tgm":{
+                    "name":"TGM介绍",
+                    "url":"tgm.md"
                 }
             }
         },
