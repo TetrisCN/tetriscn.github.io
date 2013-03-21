@@ -41,7 +41,7 @@
                         }else{
                             html+="<p>"+convert(data.name)+"</p>";
                         }
-                        if(data.data){
+                        if(data.data && data.list){
                             html+=get_html(data,json.list[i]);
                         }
                         html+="</li>";
@@ -52,7 +52,7 @@
                 function get_data(str){
                     var l=str.split(".");
                     var t=list;
-                    for(var i=0;i<l;i++){
+                    for(var i=0;i<l.length;i++){
                         if(!(t=t.data[l[i]])){
                             return null;
                         }
