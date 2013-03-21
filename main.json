@@ -28,7 +28,8 @@
             "name":"游戏介绍",
             "list":[
                 "top",
-                "nullpomino"
+                "nullpomino",
+                "tgm"
             ],
             "data":{
                 "top":{
