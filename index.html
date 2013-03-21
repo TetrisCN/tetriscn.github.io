@@ -30,13 +30,43 @@
                     str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
                     return str;
                 }
+                function get_html(json,str){
+                    var html="<ul>";
+                    var data;
+                    for(var i=0;i<json.list.length;i++){
+                        data=json.data[json.list[i]];
+                        html+="<li>";
+                        if(data.url){
+                            html+="<p><a href='#' data='"+(str?str+".":"")+json.list[i]+"'>"+convert(data.name)+"</a></p>";
+                        }else{
+                            html+="<p>"+convert(data.name)+"</p>";
+                        }
+                        if(data.data){
+                            html+=get_html(data,json.list[i]);
+                        }
+                        html+="</li>";
+                    }
+                    html+="</ul>";
+                    return html;
+                }
+                function get_data(str){
+                    var l=str.split(".");
+                    var t=list;
+                    for(var i=0;i<l;i++){
+                        if(!(t=t.data[l[i]])){
+                            return null;
+                        }
+                    }
+                    return t;
+                }
                 function load(name){
                     if(now!=name){
-                        if(list.data[name]){
+                        var data=get_data(name);
+                        if(data){
                             if(datas[name]){
                                 main.html(datas[name]);
                             }else{
-                                $.get(list.data[name].data,function(md){
+                                $.get(data.url,function(md){
                                     datas[name]=convert(markdown.toHTML(md));
                                     main.html(datas[name]);
                                 });
@@ -50,15 +80,7 @@
                 }
                 $.getJSON("main.json",function(json){
                     list=json;
-                    var html="";
-                    html+="<ul>";
-                    for(var i=0;i<list.list.length;i++){
-                        html+="<li>";
-                        html+="<a href='#' data='"+list.list[i]+"'>"+convert(list.data[list.list[i]].name)+"</a>";
-                        html+="</li>";
-                    }
-                    html+="</ul>";
-                    left.html(html);
+                    left.html(get_html(list));
                     as=left.find("a");
                     var hash=window.location.hash.replace(/^#/,"");
                     if(hash){

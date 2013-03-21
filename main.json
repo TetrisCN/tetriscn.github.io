@@ -4,28 +4,42 @@
         "link",
         "group",
         "download",
+        "introduction",
+        "top",
         "web"
     ],
     "data":{
         "main":{
             "name":"首页",
-            "data":"main.md"
+            "url":"main.md"
         },
         "link":{
             "name":"链接汇总",
-            "data":"link.md"
+            "url":"link.md"
         },
         "group":{
             "name":"官方群号",
-            "data":"group.md"
+            "url":"group.md"
+        },
+        "introduction":{
+            "name":"游戏介绍",
+            "list":[
+                "top"
+            ],
+            "data":{
+                "top":{
+                    "name":"TOP介绍",
+                    "url":"top.md"
+                }
+            }
         },
         "download":{
             "name":"游戏下载",
-            "data":"download.md"
+            "url":"download.md"
         },
         "web":{
             "name":"网页游戏",
-            "data":"web.md"
+            "url":"web.md"
         }
     }
 }
