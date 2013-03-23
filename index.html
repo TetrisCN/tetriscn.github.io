@@ -28,6 +28,20 @@
                 function convert(str){
                     str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
                     str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
+                    var m=str.match(/\{\{\{.*?\}\}\}/g);
+                    $.each(m,function(k,v){
+                        var mm=v.match(/\{\{\{(.*?)\}\}\}/);
+                        var data=get_data(mm[1]);
+                        if(data){
+                            if(data.url){
+                                str=str.replace(v,"<a href='#' data='"+mm[1]+"'>"+convert(data.name)+"</a>");
+                            }else{
+                                str=str.replace(v,"<span>"+convert(data.name)+"</span>");
+                            }
+                        }else{
+                            str=str.replace(v,"");
+                        }
+                    });
                     return str;
                 }
                 function get_html(json,str){
@@ -82,7 +96,7 @@
                     list=json;
                     left.html(get_html(list));
                     as=left.find("a");
-                    var hash=window.location.hash.replace(/^#!/,"");
+                    var hash=window.location.hash.replace(/^#/,"").replace(/^!/,"");
                     if(hash){
                         load(hash);
                     }else{
@@ -102,6 +116,10 @@
                 font-family: Arial,sans-serif;
                 font-size: 16px;
                 line-height: 20px;
+            }
+            tr
+            {
+                padding: 5px;
             }
             a
             {

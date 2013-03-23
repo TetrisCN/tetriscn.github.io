@@ -5,7 +5,8 @@
         "group",
         "download",
         "web",
-        "introduction"
+        "introduction",
+        "faq"
     ],
     "data":{
         "home":{
@@ -30,6 +31,7 @@
         },
         "introduction":{
             "name":"游戏介绍",
+            "url":"introduction.md",
             "list":[
                 "top",
                 "nullpomino",
@@ -49,6 +51,10 @@
                     "url":"tgm.md"
                 }
             }
+        },
+        "faq":{
+            "name":"常见问题解答",
+            "url":"faq.md"
         },
         "black":{
             "name":"黑历史",

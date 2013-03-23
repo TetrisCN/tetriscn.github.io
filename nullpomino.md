@@ -77,7 +77,7 @@
 
             全自定义练习模式。
 
-            <table cellpadding='5' cellspacing='0' border='1'>
+            <table cellpadding="5" cellspacing="0" border="1">
                 <tr><td>GRAVITY</td><td>重力</td></tr>
                 <tr><td>G-MAX</td><td>重力</td></tr>
                 <tr><td>ARE</td><td>出现延迟</td></tr>
@@ -143,3 +143,82 @@
         * SPF
 
             模拟超级街霸方块2。
+    * REPLAY
+
+        观看回放文件
+    * NETPLAY
+
+        联网对战
+        * harddrop.com
+        * nullpo.it.cx
+    * OPTION
+
+        设置
+        * General Options
+
+            一般设置
+        * Rule Select
+
+            规则选择
+            * Classic系列
+            * Standard系列
+        * Game Tuning
+
+            手感修正
+            * A Button Rotate
+
+                键A旋转方向
+            * Block Skin
+
+                方块外观
+            * Min DAS
+
+                最小自动加速延迟
+            * Max DAS
+
+                最大自动加速延迟
+            * DAS Delay
+
+                自动加速每格延迟
+            * Reverse Up/Down
+
+                是否翻转上下
+            * Diagonal Move
+
+                是否允许斜向运动
+        * AI Settings
+
+            人工智能设置
+        * Keyboard Setting
+
+            键位设置
+            <table cellpadding="5" cellspacing="0" border="1">
+                <tr><td>上</td><td>上</td><td>（硬降；向上选择）</td></tr>
+                <tr><td>下</td><td>下</td><td>（软降；向下选择）</td></tr>
+                <tr><td>左</td><td>左</td><td>（左移；改变、减小设置值）</td></tr>
+                <tr><td>右</td><td>右</td><td>（右移；改变、增大设置值）</td></tr>
+                <tr><td>键A</td><td>Z</td><td>（逆时针旋转；确定选择）</td></tr>
+                <tr><td>键B</td><td>X</td><td>（顺时针旋转；取消、返回上一级）</td></tr>
+                <tr><td>键C</td><td>C</td><td>（逆时针旋转）</td></tr>
+                <tr><td>键D</td><td>Space</td><td>（方块暂存）</td></tr>
+                <tr><td>键E</td><td>D</td><td>（半周旋转）</td></tr>
+                <tr><td>键F</td><td>S</td><td>（网络对战中空闲时练习）</td></tr>
+                <tr><td>退出</td><td>F12</td><td></td></tr>
+                <tr><td>暂停</td><td>ESC</td><td></td></tr>
+                <tr><td>放弃</td><td>F11</td><td></td></tr>
+                <tr><td>重新开始</td><td>F10</td><td></td></tr>
+                <tr><td>单帧操作</td><td>N</td><td></td></tr>
+                <tr><td>屏幕截图</td><td>F5</td><td></td></tr>
+            </table>
+        * Keyboard Navigation Setting
+
+            菜单中的键位设置
+        * Keyboard Reset
+
+            复位按键设置到默认方案
+        * Joystick Setting
+
+            游戏杆设置
+    * EXIT
+
+        退出
