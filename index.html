@@ -29,19 +29,21 @@
                     str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
                     str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
                     var m=str.match(/\{\{\{.*?\}\}\}/g);
-                    $.each(m,function(k,v){
-                        var mm=v.match(/\{\{\{(.*?)\}\}\}/);
-                        var data=get_data(mm[1]);
-                        if(data){
-                            if(data.url){
-                                str=str.replace(v,"<a href='#' data='"+mm[1]+"'>"+convert(data.name)+"</a>");
+                    if(m){
+                        $.each(m,function(k,v){
+                            var mm=v.match(/\{\{\{(.*?)\}\}\}/);
+                            var data=get_data(mm[1]);
+                            if(data){
+                                if(data.url){
+                                    str=str.replace(v,"<a href='#' data='"+mm[1]+"'>"+convert(data.name)+"</a>");
+                                }else{
+                                    str=str.replace(v,"<span>"+convert(data.name)+"</span>");
+                                }
                             }else{
-                                str=str.replace(v,"<span>"+convert(data.name)+"</span>");
+                                str=str.replace(v,"");
                             }
-                        }else{
-                            str=str.replace(v,"");
-                        }
-                    });
+                        });
+                    }
                     return str;
                 }
                 function get_html(json,str){
