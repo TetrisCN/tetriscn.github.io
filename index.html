@@ -72,7 +72,7 @@
                                 });
                             }
                             now=name;
-                            window.location.hash="#"+name;
+                            window.location.hash="#!"+name;
                             as.removeClass("on");
                             as.filter("a[data="+name.replace(/\./g,"\\.")+"]").addClass("on");
                         }
@@ -82,7 +82,7 @@
                     list=json;
                     left.html(get_html(list));
                     as=left.find("a");
-                    var hash=window.location.hash.replace(/^#/,"");
+                    var hash=window.location.hash.replace(/^#!/,"");
                     if(hash){
                         load(hash);
                     }else{
