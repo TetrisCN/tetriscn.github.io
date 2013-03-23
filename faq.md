@@ -63,7 +63,7 @@
         <td>A</td>
         <td>
             有，比如Tetris Online Poland，Tetris Friends等……<br />
-            具体介绍请看{{{downlaod}}}、{{{web}}}及{{{introduction}}}。
+            具体介绍请看{{{download}}}、{{{web}}}及{{{introduction}}}。
         </td>
     </tr>
 </table>
