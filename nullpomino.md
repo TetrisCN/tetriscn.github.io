@@ -3,7 +3,7 @@
 * 主菜单
   * START
     开始游戏
-        * Marathon
+    * Marathon
       标准的马拉松模式，15或20个级别，固定升级系统。
     * Marathon+
       TF的生存模式，在20关过后有半隐形挑战。
