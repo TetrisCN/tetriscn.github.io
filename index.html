@@ -6,7 +6,7 @@
         <meta name="author" content="IntPtr" />
         <title>俄罗斯方块吧导航</title>
         <script type="text/javascript" src="libs/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="libs/markdown.js"></script>
+        <script type="text/javascript" src="libs/showdown.js"></script>
         <script type="text/javascript">
             $(function(){
                 var list=null;
@@ -67,7 +67,7 @@
                                 main.html(datas[name]);
                             }else{
                                 $.get(data.url,function(md){
-                                    datas[name]=convert(markdown.toHTML(md));
+                                    datas[name]=convert((new Showdown.converter()).makeHtml(md));
                                     main.html(datas[name]);
                                 });
                             }
@@ -86,7 +86,7 @@
                     if(hash){
                         load(hash);
                     }else{
-                        load("main");
+                        load("home");
                     }
                 });
             });

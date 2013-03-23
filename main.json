@@ -1,6 +1,6 @@
 {
     "list":[
-        "main",
+        "home",
         "link",
         "group",
         "download",
@@ -8,9 +8,9 @@
         "introduction"
     ],
     "data":{
-        "main":{
+        "home":{
             "name":"首页",
-            "url":"main.md"
+            "url":"home.md"
         },
         "link":{
             "name":"链接汇总",
