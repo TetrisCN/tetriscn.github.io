@@ -8,7 +8,6 @@
 ## NullpoMino
 
 * [NullpoMino 7.5.0 EN](http://pan.baidu.com/share/link?shareid=66494&uk=2618701916)
-* [NullpoMino 7.5.0 EN](http://pan.baidu.com/share/link?shareid=66494&uk=2618701916)
 * [NullpoMino 7.5.0 EN Windows](http://pan.baidu.com/share/link?shareid=66493&uk=2618701916)
 * [NullpoMino 7.5.0 EN Linux](http://pan.baidu.com/share/link?shareid=66490&uk=2618701916)
 * [NullpoMino 7.5.0 EN Mac](http://pan.baidu.com/share/link?shareid=66492&uk=2618701916)
@@ -50,6 +49,7 @@
 * [Heboris Mini](http://pan.baidu.com/share/link?shareid=66472&uk=2618701916)（覆盖到Heboris Original）
 * [Heboris C7EX](http://pan.baidu.com/share/link?shareid=66469&uk=2618701916)
 * [Heboris C8EX](http://pan.baidu.com/share/link?shareid=66470&uk=2618701916)（覆盖到Heboris C7EX）
+* Heboris C8EX完整版
 
 ## Texmaster
 

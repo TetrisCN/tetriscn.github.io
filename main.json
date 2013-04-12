@@ -23,7 +23,16 @@
         },
         "download":{
             "name":"游戏下载",
-            "url":"download.md"
+            "url":"download.md",
+            "list":[
+                "backup"
+            ],
+            "data":{
+                "backup":{
+                    "name":"备用地址",
+                    "url":"download.backup.md"
+                }
+            }
         },
         "web":{
             "name":"网页游戏",
