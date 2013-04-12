@@ -12,7 +12,7 @@
 * NullpoMino 7.5.0 EN Linux
 * NullpoMino 7.5.0 EN Mac
 * [NullpoMino 7.5.0 CN Windows](http://1000eb.com/9seg)
-* [Jre](http://1000eb.com/2s34)（游戏运行需要）
+* [Jre](http://1000eb.com/2s6y)（游戏运行需要）
 
 ## Tetris Online Poland（TOP）
 
