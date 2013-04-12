@@ -78,6 +78,7 @@ html,body
     border: 1px solid black;
     font-size: 32px;
     font-weight: bolder;
+    line-height: 40px;
 }
 #cols
 {
