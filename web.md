@@ -23,4 +23,4 @@
 
 ## TSnakeEX
 
-* [TSnakeEX](http://tsnake.net/)
+* [TSnakeEX](http://lixiaoyan.github.io/TSnake/)
