@@ -120,7 +120,7 @@ html,body
 #tip
 {
     position: absolute;
-    right: 0;
+    right: 40px;
     top: 0;
 }
 #tip-label
@@ -128,7 +128,7 @@ html,body
     position: absolute;
     right: 70px;
     top: 5px;
-    width: 160px;
+    width: 200px;
     height: 40px;
     padding: 4px;
     border-radius: 5px;
@@ -136,7 +136,7 @@ html,body
 }
 #tip-label-text
 {
-    width: 160px;
+    width: 200px;
     height: 40px;
     display: table-cell;
     font-size: 16px;

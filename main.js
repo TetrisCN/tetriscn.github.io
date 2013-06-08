@@ -3,6 +3,7 @@ $(function(){
     var left=$("#left-inner");
     var main=$("#main-inner");
     var tip=$("#tip-label-text");
+    var tip_div=$("#tip");
     var tip_list=["加载列表中~"];
     var as=null;
     var datas={};
@@ -116,6 +117,19 @@ $(function(){
             }
         });
         change_tip();
+    });
+    $("#tip-icon").click(function(){
+        change_tip();
+    }).mouseover(function(){
+        tip_div.stop();
+        tip_div.animate({
+            right:0
+        });
+    }).mouseout(function(){
+        tip_div.stop();
+        tip_div.animate({
+            right:40
+        });
     });
     $("body").on("click","a",function(e){
         var a=$(e.target);
