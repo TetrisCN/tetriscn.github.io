@@ -120,7 +120,7 @@ html,body
 #tip
 {
     position: absolute;
-    right: 40px;
+    right: -40px;
     top: 0;
 }
 #tip-label

@@ -128,7 +128,7 @@ $(function(){
     }).mouseout(function(){
         tip_div.stop();
         tip_div.animate({
-            right:40
+            right:-40
         });
     });
     $("body").on("click","a",function(e){
