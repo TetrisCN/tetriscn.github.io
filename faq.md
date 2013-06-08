@@ -28,25 +28,25 @@
             <table cellpadding="5" cellspacing="0" border="0">
                 <tr>
                     <td>
-                        <div class="block">++++/iiii</div>
+                        <div class="block">++++|iiii</div>
                     </td>
                     <td>
-                        <div class="block">+oo+/+oo+</div>
+                        <div class="block">+oo+|+oo+</div>
                     </td>
                     <td>
-                        <div class="block">+t++/ttt+</div>
+                        <div class="block">+t++|ttt+</div>
                     </td>
                     <td>
-                        <div class="block">+ss+/ss++</div>
+                        <div class="block">+ss+|ss++</div>
                     </td>
                     <td>
-                        <div class="block">zz++/+zz+</div>
+                        <div class="block">zz++|+zz+</div>
                     </td>
                     <td>
-                        <div class="block">j+++/jjj+</div>
+                        <div class="block">j+++|jjj+</div>
                     </td>
                     <td>
-                        <div class="block">++l+/lll+</div>
+                        <div class="block">++l+|lll+</div>
                     </td>
                 </tr>
                 <tr>

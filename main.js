@@ -18,7 +18,7 @@ $(function(){
     });
     function convert(str){
         str=str.replace(/\[%\]/g,"<span class='highlight'>☆推荐☆</span>");
-        str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
+        str=str.replace(/\|ORZ\|/g,"<span class='hidden'>ORZ</span>");
         str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
         var m=str.match(/\{\{\{.*?\}\}\}/g);
         if(m){
@@ -79,10 +79,10 @@ $(function(){
                         main.find(".block").each(function(){
                             var div=$(this);
                             var data=div.html();
-                            var width=data.split("/")[0].length*16;
+                            var width=data.split("|")[0].length*16;
                             var html="";
                             for(var i=0;i<data.length;i++){
-                                if(data[i]!="/"){
+                                if(data[i]!="|"){
                                     html+="<img src='block-"+data[i]+".png' />";
                                 }
                             }
