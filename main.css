@@ -83,6 +83,10 @@ html,body
 {
     text-align: center;
 }
+.strong
+{
+    font-weight: bold;
+}
 .block
 {
     display: none;

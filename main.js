@@ -75,8 +75,7 @@ $(function(){
                     main.html(datas[name]);
                 }else{
                     $.get(data.url,function(md){
-                        datas[name]=convert(converter.makeHtml(md));
-                        main.html(datas[name]);
+                        main.html(convert(converter.makeHtml(md)));
                         main.find(".block").each(function(){
                             var div=$(this);
                             var data=div.html();
@@ -92,6 +91,7 @@ $(function(){
                             div.removeClass("block");
                             div.addClass("block-view");
                         });
+                        datas[name]=main.html();
                     });
                 }
                 now=name;

@@ -51,25 +51,25 @@
                 </tr>
                 <tr>
                     <td>
-                        <strong class="center">I</strong>
+                        <div class="center strong">I</div>
                     </td>
                     <td>
-                        <strong class="center">O</strong>
+                        <div class="center strong">O</div>
                     </td>
                     <td>
-                        <strong class="center">T</strong>
+                        <div class="center strong">T</div>
                     </td>
                     <td>
-                        <strong class="center">S</strong>
+                        <div class="center strong">S</div>
                     </td>
                     <td>
-                        <strong class="center">Z</strong>
+                        <div class="center strong">Z</div>
                     </td>
                     <td>
-                        <strong class="center">J</strong>
+                        <div class="center strong">J</div>
                     </td>
                     <td>
-                        <strong class="center">L</strong>
+                        <div class="center strong">L</div>
                     </td>
                 </tr>
             </table>
