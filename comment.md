@@ -5,7 +5,7 @@
     (function(){
         var iframe=$("#main-inner iframe");
         iframe.on("load",function(){
-            iframe.height($(iframe.prop("contentDocument")).height());
+            iframe.height($(iframe.prop("contentDocument").body).height());
         });
     })();
 </script>
