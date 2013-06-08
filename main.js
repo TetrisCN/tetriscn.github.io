@@ -5,6 +5,7 @@ $(function(){
     var as=null;
     var datas={};
     var now="";
+    var converter=new Showdown.converter();
     $("body").on("click","a",function(e){
         var a=$(e.target);
         var data=a.attr("data");
@@ -16,6 +17,7 @@ $(function(){
         e.preventDefault();
     });
     function convert(str){
+        str=str.replace(/\[%\]/g,"<span class='highlight'>☆推荐☆</span>");
         str=str.replace(/\|([^|]*?)\|/g,"<span class='hidden'>$1</span>");
         str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
         var m=str.match(/\{\{\{.*?\}\}\}/g);
@@ -73,7 +75,7 @@ $(function(){
                     main.html(datas[name]);
                 }else{
                     $.get(data.url,function(md){
-                        datas[name]=convert((new Showdown.converter()).makeHtml(md));
+                        datas[name]=convert(converter.makeHtml(md));
                         main.html(datas[name]);
                     });
                 }

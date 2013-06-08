@@ -68,6 +68,10 @@ html,body
 {
     background-color: black;
 }
+.highlight
+{
+    color: red;
+}
 #container
 {
     padding: 10px;
