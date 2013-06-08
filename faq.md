@@ -25,7 +25,40 @@
         <td>A</td>
         <td>
             方块的类型一共有7种，分别叫I、T、O、L、J、S、Z。<br />
-            <img src="Tetromino.png" />
+            <table cellpadding="5" cellspacing="0" border="0">
+                <tr>
+                    <td>
+                        <div class="block">++++|iiii</div>
+                    </td>
+                    <td>
+                        <div class="block">+oo+|+oo+</div>
+                    </td>
+                    <td>
+                        <div class="block">ttt+|+t++</div>
+                    </td>
+                    <td>
+                        <div class="block">+ss+|ss++</div>
+                    </td>
+                    <td>
+                        <div class="block">zz++|+zz+</div>
+                    </td>
+                    <td>
+                        <div class="block">j+++|jjj+</div>
+                    </td>
+                    <td>
+                        <div class="block">++l+|lll+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>O</td>
+                    <td>T</td>
+                    <td>S</td>
+                    <td>Z</td>
+                    <td>J</td>
+                    <td>L</td>
+                </tr>
+            </table>
         </td>
     </tr>
     <tr>

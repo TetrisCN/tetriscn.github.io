@@ -79,6 +79,23 @@ html,body
 {
     color: red;
 }
+.block
+{
+    display: none;
+}
+.block-view
+{
+    padding: 5px;
+    border: 1px solid #ccc;
+    zoom: 1;
+    overflow: hidden;
+}
+.block-view img
+{
+    width: 16px;
+    height: 16px;
+    float: left;
+}
 #container
 {
     padding: 10px;
