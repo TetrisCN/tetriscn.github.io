@@ -34,7 +34,7 @@
                         <div class="block">+oo+/+oo+</div>
                     </td>
                     <td>
-                        <div class="block">ttt+/+t++</div>
+                        <div class="block">+t++/ttt+</div>
                     </td>
                     <td>
                         <div class="block">+ss+/ss++</div>
