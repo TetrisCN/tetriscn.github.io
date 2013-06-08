@@ -2,8 +2,10 @@
     "list":[
         "home",
         "start",
+        "tutorial",
         "link",
         "group",
+        "friend",
         "download",
         "web",
         "introduction",
@@ -19,6 +21,10 @@
             "name":"新手入门",
             "url":"start.md"
         },
+        "tutorial":{
+            "name":"游戏教程",
+            "url":"tutorial.md"
+        },
         "link":{
             "name":"链接汇总",
             "url":"link.md"
@@ -26,6 +32,10 @@
         "group":{
             "name":"官方群号",
             "url":"group.md"
+        },
+        "friend":{
+            "name":"吧友介绍",
+            "url":"friend.md"
         },
         "download":{
             "name":"游戏下载",
