@@ -31,12 +31,17 @@
             "name":"游戏下载",
             "url":"download.md",
             "list":[
-                "backup"
+                "backup",
+                "other"
             ],
             "data":{
                 "backup":{
                     "name":"备用地址",
                     "url":"download.backup.md"
+                },
+                "other":{
+                    "name":"其他下载站",
+                    "url":"download.other.md"
                 }
             }
         },
