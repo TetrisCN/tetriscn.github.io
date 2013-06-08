@@ -80,16 +80,17 @@ $(function(){
                         main.find(".block").each(function(){
                             var div=$(this);
                             var data=div.html();
-                            var width=data.split("|")[0].length*16;
+                            var width=data.split("/")[0].length*16;
                             var html="";
                             for(var i=0;i<data.length;i++){
-                                if(data[i]!="|"){
+                                if(data[i]!="/"){
                                     html+="<img src='block-"+data[i]+".png' />";
                                 }
                             }
                             div.html(html);
                             div.css("width",width);
-                            div.replaceClass("block","block-view");
+                            div.removeClass("block");
+                            div.addClass("block-view");
                         });
                     });
                 }
