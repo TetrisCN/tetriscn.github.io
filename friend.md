@@ -10,11 +10,11 @@
 
 <table cellpadding="5" cellspacing="0" border="1">
     <tr style="background-color: #ccc;">
-        <th width="120">昵称</th>
-        <th width="120">贴吧ID</th>
-        <th width="120">小号</th>
-        <th width="80">群内编号</th>
-        <th width="240">简介</th>
+        <th style="width: 100;">昵称</th>
+        <th style="width: 100;">贴吧ID</th>
+        <th style="width: 100;">小号</th>
+        <th style="width: 100;">群内编号</th>
+        <th style="width: 320;">简介</th>
     </tr>
     <tr style="background-color: #eee;">
         <td colspan="5" style="font-weight: bold;">现任吧主</td>
