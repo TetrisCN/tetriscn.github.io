@@ -28,6 +28,10 @@ a[href^=http]:after
     height: 10px;
     margin: 5px;
 }
+.ds-thread a[href^=http]:after
+{
+    content: none !important;
+}
 ul,ol
 {
     padding-left: 40px;
