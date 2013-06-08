@@ -1,6 +1,6 @@
 # 常见问题解答
 
-<table cellpadding="5" cellspacing="0" border="0">
+<table cellpadding="5" cellspacing="0" border="1">
     <tr>
         <td>Q</td>
         <td>

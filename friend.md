@@ -1,6 +1,6 @@
 # 吧友介绍
 
-**建设中页面。**
+**页面建设中。**
 
 **资料整理中，如有遗漏请私信吧务。**
 
@@ -8,16 +8,16 @@
 
 **感谢吧友xb2002b提供的参考文本。**
 
-<table cellpadding="5" cellspacing="0" border="0">
-    <tr>
-        <th>昵称</th>
-        <th>贴吧ID</th>
-        <th>小号</th>
-        <th>群内编号</th>
-        <th>简介</th>
+<table cellpadding="5" cellspacing="0" border="1">
+    <tr style="background-color: #ccc;">
+        <th width="120">昵称</th>
+        <th width="120">贴吧ID</th>
+        <th width="120">小号</th>
+        <th width="80">群内编号</th>
+        <th width="240">简介</th>
     </tr>
-    <tr>
-        <th colspan="3">现任吧主</th>
+    <tr style="background-color: #eee;">
+        <td colspan="5" style="font-weight: bold;">现任吧主</td>
     </tr>
     <tr>
         <td>Farter</td>
@@ -46,8 +46,8 @@
             公用马甲，由吧务及指定吧友共同管理。
         </td>
     </tr>
-    <tr>
-        <th colspan="3">前任吧主</th>
+    <tr style="background-color: #eee;">
+        <td colspan="5" style="font-weight: bold;">前任吧主</td>
     </tr>
     <tr>
         <td>xyz<sup class="highlight">准确性待定</sup></td>
@@ -58,8 +58,8 @@
             水楼建设者，现在神隐中。
         </td>
     </tr>
-    <tr>
-        <th colspan="3">真·大神</th>
+    <tr style="background-color: #eee;">
+        <td colspan="5" style="font-weight: bold;">真·大神</td>
     </tr>
     <tr>
         <td>魔王<sup class="highlight">准确性待定</sup></td>
