@@ -98,6 +98,9 @@ $(function(){
             tip.html(tip_list[Math.floor(Math.random()*tip_list.length)]);
         }).fadeIn();
     }
+    function trim(str){
+        return str.replace(/^\s+/,"").replace(/\s+$/,"");
+    }
     $.getJSON("main.json",function(json){
         list=json;
         left.html(get_html(list));
@@ -113,7 +116,7 @@ $(function(){
         var temp=text.split("\n");
         tip_list=[];
         $.each(temp,function(index,data){
-            data=data.trim();
+            data=trim(data);
             if(data){
                 tip_list.push(data);
             }
