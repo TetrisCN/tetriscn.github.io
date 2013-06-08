@@ -10,11 +10,11 @@
 
 <table cellpadding="5" cellspacing="0" border="1">
     <tr style="background-color: #ccc;">
-        <td style="width: 100; font-weight: bold; text-align: center;">昵称</td>
-        <td style="width: 100; font-weight: bold; text-align: center;">贴吧ID</td>
-        <td style="width: 100; font-weight: bold; text-align: center;">小号</td>
-        <td style="width: 100; font-weight: bold; text-align: center;">群内编号</td>
-        <td style="width: 320; font-weight: bold; text-align: center;">简介</td>
+        <td style="font-weight: bold; text-align: center;">昵称</td>
+        <td style="font-weight: bold; text-align: center;">贴吧ID</td>
+        <td style="font-weight: bold; text-align: center;">小号</td>
+        <td style="font-weight: bold; text-align: center;">群内编号</td>
+        <td style="font-weight: bold; text-align: center;">简介</td>
     </tr>
     <tr style="background-color: #eee;">
         <td colspan="5" style="font-weight: bold;">现任吧主</td>
@@ -25,7 +25,8 @@
         <td>farteryhr</td>
         <td>TTTT</td>
         <td>
-            （伪）程序员，T-EX的开发者，是贴吧最活跃的吧友之一。经常热心的帮助他人解决问题，也会发一些游戏相关教程。
+            （伪）程序员，T-EX的开发者，是贴吧最活跃的吧友之一。<br />
+            经常热心的帮助他人解决问题，也会发一些游戏相关教程。
         </td>
     </tr>
     <tr>
@@ -34,7 +35,8 @@
         <td>&lt;暂无&gt;</td>
         <td>T088</td>
         <td>
-            （伪）程序员，TSnakeEX的开发者，本导航的制作者。很少出现在吧里，除了偶尔出来发点公告。
+            （伪）程序员，TSnakeEX的开发者，本导航的制作者。<br />
+            很少出现在吧里，除了偶尔出来发点公告。
         </td>
     </tr>
     <tr>
