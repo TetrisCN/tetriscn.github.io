@@ -1,6 +1,7 @@
 {
     "list":[
         "home",
+        "start",
         "link",
         "group",
         "download",
@@ -12,6 +13,10 @@
         "home":{
             "name":"首页",
             "url":"home.md"
+        },
+        "start":{
+            "name":"新手入门",
+            "url":"start.md"
         },
         "link":{
             "name":"链接汇总",
