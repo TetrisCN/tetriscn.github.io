@@ -79,6 +79,10 @@ html,body
 {
     color: red;
 }
+.center
+{
+    text-align: center;
+}
 .block
 {
     display: none;

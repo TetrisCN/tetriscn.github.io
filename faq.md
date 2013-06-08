@@ -50,13 +50,27 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>I</td>
-                    <td>O</td>
-                    <td>T</td>
-                    <td>S</td>
-                    <td>Z</td>
-                    <td>J</td>
-                    <td>L</td>
+                    <td>
+                        <strong class="center">I</strong>
+                    </td>
+                    <td>
+                        <strong class="center">O</strong>
+                    </td>
+                    <td>
+                        <strong class="center">T</strong>
+                    </td>
+                    <td>
+                        <strong class="center">S</strong>
+                    </td>
+                    <td>
+                        <strong class="center">Z</strong>
+                    </td>
+                    <td>
+                        <strong class="center">J</strong>
+                    </td>
+                    <td>
+                        <strong class="center">L</strong>
+                    </td>
                 </tr>
             </table>
         </td>
