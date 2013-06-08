@@ -28,6 +28,10 @@ a[href^=http]:after
     height: 10px;
     margin: 5px;
 }
+#tip a[href^=http]:after
+{
+    content: none;
+}
 ul,ol
 {
     padding-left: 40px;
@@ -116,6 +120,7 @@ html,body
     font-weight: bolder;
     line-height: 40px;
     position: relative;
+    overflow: hidden;
 }
 #tip
 {

@@ -94,7 +94,9 @@ $(function(){
         }
     }
     function change_tip(){
-        tip.html(tip_list[Math.floor(Math.random()*tip_list.length)]);
+        tip.stop().fadeOut(100,function(){
+            tip.html(tip_list[Math.floor(Math.random()*tip_list.length)]);
+        }).fadeIn();
     }
     $.getJSON("main.json",function(json){
         list=json;
@@ -121,15 +123,13 @@ $(function(){
     $("#tip-icon").click(function(){
         change_tip();
     }).mouseover(function(){
-        tip_div.stop();
-        tip_div.animate({
+        tip_div.stop().animate({
             right:0
-        });
+        },100);
     }).mouseout(function(){
-        tip_div.stop();
-        tip_div.animate({
+        tip_div.stop().animate({
             right:-40
-        });
+        },100);
     });
     $("body").on("click","a",function(e){
         var a=$(e.target);
