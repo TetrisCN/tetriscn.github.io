@@ -11,14 +11,14 @@
 * [NullpoMino 7.5.0 EN Windows](http://pan.baidu.com/share/link?shareid=66493&uk=2618701916)
 * [NullpoMino 7.5.0 EN Linux](http://pan.baidu.com/share/link?shareid=66490&uk=2618701916)
 * [NullpoMino 7.5.0 EN Mac](http://pan.baidu.com/share/link?shareid=66492&uk=2618701916)
-* [NullpoMino 7.5.0 CN Windows](http://pan.baidu.com/share/link?shareid=66489&uk=2618701916) [%]
+* [NullpoMino 7.5.0 CN Windows](http://pan.baidu.com/share/link?shareid=66489&uk=2618701916) <span class="highlight strong">☆推荐☆</span>
 * [Jre](http://java.com/zh_CN/download/)（游戏运行需要）
 
 ## Tetris Online Poland（TOP）
 
 * [TOP EN](http://pan.baidu.com/share/link?shareid=66517&uk=2618701916)
 * [TOP JP](http://pan.baidu.com/share/link?shareid=66518&uk=2618701916)
-* [TOP CN 0.5](http://pan.baidu.com/share/link?shareid=66516&uk=2618701916) [%]
+* [TOP CN 0.5](http://pan.baidu.com/share/link?shareid=66516&uk=2618701916) <span class="highlight strong">☆推荐☆</span>
 * [.Net 3.5](http://pan.baidu.com/share/link?shareid=66512&uk=2618701916)（游戏运行需要，Windows 7自带）
 
 ## Tetris The Grand Master（TGM）

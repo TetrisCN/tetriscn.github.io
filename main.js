@@ -17,7 +17,6 @@ $(function(){
         e.preventDefault();
     });
     function convert(str){
-        str=str.replace(/\[%\]/g,"<span class='highlight'>☆推荐☆</span>");
         str=str.replace(/\|ORZ\|/g,"<span class='hidden'>ORZ</span>");
         str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
         var m=str.match(/\{\{\{.*?\}\}\}/g);

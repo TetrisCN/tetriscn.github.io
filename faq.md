@@ -24,7 +24,7 @@
     <tr>
         <td>A</td>
         <td>
-            方块的类型一共有7种，分别叫I、T、O、L、J、S、Z。<br />
+            方块的类型一共有7种，分别叫I、O、T、S、Z、J、L。<br />
             <table cellpadding="5" cellspacing="0" border="0">
                 <tr>
                     <td>

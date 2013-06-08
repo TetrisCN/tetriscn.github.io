@@ -52,7 +52,7 @@
         <td colspan="5" style="font-weight: bold;">前任吧主</td>
     </tr>
     <tr>
-        <td>xyz<sup class="highlight">准确性待定</sup></td>
+        <td>xyz<sup class="highlight">待定</sup></td>
         <td>xyz198874</td>
         <td>&lt;暂无&gt;</td>
         <td>&lt;暂无&gt;</td>
@@ -64,7 +64,7 @@
         <td colspan="5" style="font-weight: bold;">真·大神</td>
     </tr>
     <tr>
-        <td>魔王<sup class="highlight">准确性待定</sup></td>
+        <td>魔王<sup class="highlight">待定</sup></td>
         <td>GAP_15</td>
         <td>&lt;暂无&gt;</td>
         <td>&lt;暂无&gt;</td>
