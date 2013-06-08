@@ -115,6 +115,57 @@ html,body
     font-size: 32px;
     font-weight: bolder;
     line-height: 40px;
+    position: relative;
+}
+#tip
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#tip-label
+{
+    position: absolute;
+    right: 70px;
+    top: 5px;
+    width: 160px;
+    height: 40px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+#tip-label-text
+{
+    width: 160px;
+    height: 40px;
+    display: table-cell;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#tip-arrow
+{
+    position: absolute;
+    right: 60px;
+    top: 24px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #999;
+}
+#tip-icon
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #999;
+    border-radius: 5px;
 }
 #cols
 {

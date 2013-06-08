@@ -2,20 +2,12 @@ $(function(){
     var list=null;
     var left=$("#left-inner");
     var main=$("#main-inner");
+    var tip=$("#tip-label-text");
+    var tip_list=["加载列表中~"];
     var as=null;
     var datas={};
     var now="";
     var converter=new Showdown.converter();
-    $("body").on("click","a",function(e){
-        var a=$(e.target);
-        var data=a.attr("data");
-        if(data){
-            load(data);
-        }else{
-            window.open(a.attr("href"),"_blank");
-        }
-        e.preventDefault();
-    });
     function convert(str){
         str=str.replace(/\|ORZ\|/g,"<span class='hidden'>ORZ</span>");
         str=str.replace(/\[\[\[(.*?)\]\]\]/,"<span class='black'>$1</span>");
@@ -100,6 +92,9 @@ $(function(){
             }
         }
     }
+    function change_tip(){
+        tip.html(tip_list[Math.floor(Math.random()*tip_list.length)]);
+    }
     $.getJSON("main.json",function(json){
         list=json;
         left.html(get_html(list));
@@ -110,5 +105,26 @@ $(function(){
         }else{
             load("home");
         }
+    });
+    $.get("tip.txt",function(text){
+        var temp=text.split("\n");
+        tip_list=[];
+        $.each(temp,function(index,data){
+            data=data.trim();
+            if(data){
+                tip_list.push(data);
+            }
+        });
+        change_tip();
+    });
+    $("body").on("click","a",function(e){
+        var a=$(e.target);
+        var data=a.attr("data");
+        if(data){
+            load(data);
+        }else{
+            window.open(a.attr("href"),"_blank");
+        }
+        e.preventDefault();
     });
 });
