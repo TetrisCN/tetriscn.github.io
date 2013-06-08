@@ -13,14 +13,14 @@
 * NullpoMino 7.5.0 EN Windows
 * NullpoMino 7.5.0 EN Linux
 * NullpoMino 7.5.0 EN Mac
-* [NullpoMino 7.5.0 CN Windows](http://1000eb.com/9seg) [%]
+* [NullpoMino 7.5.0 CN Windows](http://1000eb.com/9seg) <span class="highlight strong">☆推荐☆</span>
 * [Jre](http://1000eb.com/2s6y)（游戏运行需要）
 
 ## Tetris Online Poland（TOP）
 
 * [TOP EN](http://1000eb.com/au2i)
 * TOP JP
-* [TOP CN 0.5](http://1000eb.com/9ayq) [%]
+* [TOP CN 0.5](http://1000eb.com/9ayq) <span class="highlight strong">☆推荐☆</span>
 * [.Net 3.5](http://1000eb.com/3trn)（游戏运行需要，Windows 7自带）
 
 ## Tetris The Grand Master（TGM）
