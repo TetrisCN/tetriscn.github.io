@@ -1,10 +1,5 @@
 # 游戏下载
 
-## Tetris Zone
-
-* [Tetris Zone 1.2.1 Windows](http://pan.baidu.com/share/link?shareid=66527&uk=2618701916)
-* [Tetris Zone 1.2.1 Mac](http://pan.baidu.com/share/link?shareid=66526&uk=2618701916)
-
 ## NullpoMino
 
 * [NullpoMino 7.5.0 EN](http://pan.baidu.com/share/link?shareid=66494&uk=2618701916)
@@ -30,6 +25,11 @@
 * [TGM3音乐包·分卷1](http://pan.baidu.com/share/link?shareid=66524&uk=2618701916)（解压到“TGM3游戏目录\\data\\bgm\\”）
 * [TGM3音乐包·分卷2](http://pan.baidu.com/share/link?shareid=66525&uk=2618701916)（解压到“TGM3游戏目录\\data\\bgm\\”）
 * [TGM3帧频限制软件](http://pan.baidu.com/share/link?shareid=66523&uk=2618701916)（针对TGM3帧频异常）
+
+## Tetris Zone
+
+* [Tetris Zone 1.2.1 Windows](http://pan.baidu.com/share/link?shareid=66527&uk=2618701916)
+* [Tetris Zone 1.2.1 Mac](http://pan.baidu.com/share/link?shareid=66526&uk=2618701916)
 
 ## FC机（NES）
 

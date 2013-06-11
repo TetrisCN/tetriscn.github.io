@@ -2,11 +2,6 @@
 
 **这里是备用下载地址，不保证这里的所有内容都是最新的。**
 
-## Tetris Zone
-
-* [Tetris Zone 1.2.1 Windows](http://zone.tetris.com/download/win/current)
-* [Tetris Zone 1.2.1 Mac](http://zone.tetris.com/download/mac/current)
-
 ## NullpoMino
 
 * [NullpoMino 7.5.0 EN](http://1000eb.com/2s6u)
@@ -32,6 +27,11 @@
 * [TGM3音乐包·分卷1](http://1000eb.com/2s4v)（解压到“TGM3游戏目录\\data\\bgm\\”）
 * [TGM3音乐包·分卷2](http://1000eb.com/2s5k)（解压到“TGM3游戏目录\\data\\bgm\\”）
 * [TGM3帧频限制软件](http://1000eb.com/2r71)（针对TGM3帧频异常）
+
+## Tetris Zone
+
+* [Tetris Zone 1.2.1 Windows](http://zone.tetris.com/download/win/current)
+* [Tetris Zone 1.2.1 Mac](http://zone.tetris.com/download/mac/current)
 
 ## FC机（NES）
 
