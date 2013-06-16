@@ -19,7 +19,11 @@ $(function(){
                 var data=get_data(mm[1]);
                 if(data){
                     if(data.url){
-                        str=str.replace(v,"<a href='#' data='"+mm[1]+"'>"+convert(data.name)+"</a>");
+                        if(data.external){
+                            str=str.replace(v,"<a href='"+data.url+"'>"+convert(data.name)+"</a>");
+                        }else{
+                            str=str.replace(v,"<a href='#' data='"+mm[1]+"'>"+convert(data.name)+"</a>");
+                        }
                     }else{
                         str=str.replace(v,"<span>"+convert(data.name)+"</span>");
                     }
@@ -37,7 +41,11 @@ $(function(){
             data=json.data[json.list[i]];
             html+="<li>";
             if(data.url){
-                html+="<p><a href='#' data='"+(str?str+".":"")+json.list[i]+"'>"+convert(data.name)+"</a></p>";
+                if(data.external){
+                    html+="<p><a href='"+data.url+"'>"+convert(data.name)+"</a></p>";
+                }else{
+                    html+="<p><a href='#' data='"+(str?str+".":"")+json.list[i]+"'>"+convert(data.name)+"</a></p>";
+                }
             }else{
                 html+="<p>"+convert(data.name)+"</p>";
             }

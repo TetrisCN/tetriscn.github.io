@@ -6,6 +6,7 @@
         "link",
         "group",
         "friend",
+        "wiki",
         "download",
         "web",
         "introduction",
@@ -36,6 +37,11 @@
         "friend":{
             "name":"吧友介绍",
             "url":"friend.md"
+        },
+        "wiki":{
+            "name":"游戏百科",
+            "url":"wiki/",
+            "external":true
         },
         "download":{
             "name":"游戏下载",
@@ -88,7 +94,8 @@
         },
         "comment":{
             "name":"意见反馈",
-            "url":"comment.md"
+            "url":"comment.html",
+            "external":true
         },
         "black":{
             "name":"黑历史",

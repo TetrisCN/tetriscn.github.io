@@ -21,17 +21,6 @@ a:link,a:visited,a:hover,a:active
 {
     color: #0000ff;
 }
-a[href^=http]:after
-{
-    content: url(external.png);
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
-#tip a[href^=http]:after
-{
-    content: none;
-}
 ul,ol
 {
     padding-left: 40px;
@@ -201,6 +190,13 @@ html,body
 #main-inner
 {
     padding: 10px;
+}
+#main-inner a[href^=http]:after
+{
+    content: url(external.png);
+    width: 10px;
+    height: 10px;
+    margin: 5px;
 }
 #left-col
 {
