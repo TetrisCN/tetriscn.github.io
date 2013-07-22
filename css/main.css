@@ -191,6 +191,13 @@ html,body
 {
     padding: 10px;
 }
+#main-inner a[href^=http]:after
+{
+    content: url(/img/external.png);
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
 #left-col
 {
     width: 250px;
