@@ -5,7 +5,12 @@ $(function(){
         "linux":"Linux",
         "zh":"中文",
         "en":"English",
-        "jp":"日本語"
+        "jp":"日本語",
+        "download":{
+            "zh":"下载",
+            "en":"Download",
+            "jp":"Download"
+        }
     };
     var data={
         "top":{
@@ -26,7 +31,7 @@ $(function(){
     }else{
         platform="win";
     }
-    var temp=navigator.userLanguage || navigator.language;
+    var temp=(navigator.userLanguage || navigator.language).toLowerCase();
     var language="";
     if(temp.indexOf("zh")!=-1){
         language="zh";
@@ -43,12 +48,16 @@ $(function(){
         if(data[name]){
             if(data[name][platform] && (data[name][platform][language] || data[name][platform]["en"])){
                 var url=name+"/"+platform+"/";
+                var text=label[platform]+"/";
                 if(data[name][platform][language]){
                     url+=language+"/"+data[name][platform][language][0];
+                    text+=label[language]+"/"+data[name][platform][language][0];
                 }else{
                     url+="en/"+data[name][platform]["en"][0];
+                    text+=label["en"]+"/"+data[name][platform]["en"][0];
                 }
-                $("<a></a>").attr("href",url).addClass("download").appendTo(item);
+                $("<div></div>").addClass("download-text").html(text).appendTo(item);
+                $("<a></a>").attr("href","/d/?"+url).addClass("download").html(label.download[language]).appendTo(item);
             }
         }
     });
