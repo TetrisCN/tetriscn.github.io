@@ -158,6 +158,7 @@ $(function(){
                 })
                 .appendTo($("<div></div>").appendTo(form));
             var submit=$("<a></a>")
+                .attr("target","_blank")
                 .addClass("submit")
                 .html(label.submit[language])
                 .addClass("disabled")
