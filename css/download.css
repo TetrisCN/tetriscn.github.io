@@ -73,13 +73,21 @@ body
 {
     background-color: #3399ff;
 }
+.download.disabled,
+.download.disabled:link,
+.download.disabled:visited,
+.download.disabled:hover,
+.download.disabled:active
+{
+    background-color: #cccccc;
+}
 .other
 {
     display: block;
     position: absolute;
     right: 106px;
     top: 0;
-    padding: 10px;
+    margin: 10px;
 }
 .form
 {
@@ -137,5 +145,5 @@ body
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 10px;
+    margin: 10px;
 }
