@@ -178,18 +178,18 @@ $(function(){
                 .appendTo(item);
             $.each(data[name],function(platform,obj){
                 $("<option></option>")
-                    .attr("value",platform)
+                    .attr("value",name+"/"+platform)
                     .html(label[platform])
                     .appendTo(select_platform);
                 $.each(obj,function(language,obj){
                     $("<option></option>")
-                        .attr("value",platform+"/"+language)
+                        .attr("value",name+"/"+platform+"/"+language)
                         .html(label[language])
                         .hide()
                         .appendTo(select_language);
                     $.each(obj,function(index,version){
                         $("<option></option>")
-                            .attr("value",platform+"/"+language+"/"+version)
+                            .attr("value",name+"/"+platform+"/"+language+"/"+version)
                             .html(version)
                             .hide()
                             .appendTo(select_version);
