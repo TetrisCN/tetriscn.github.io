@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body,input,button,table,tr,td,th
+{
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+a
+{
+    text-decoration: none;
+    color: #0000ff;
+}
+a:link,a:visited,a:hover,a:active
+{
+    color: #0000ff;
+}
+body
+{
+    margin-top: 10px;
+}
+.item
+{
+    width: 720px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    box-shadow: 0 0 5px #999999;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.title
+{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.download
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85px;
+    border-radius: 0 5px 0 5px;
+    padding: 10px;
+    border-left: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    box-shadow: 0 0 5px #999999;
+    text-align: center;
+    background-color: #66ccff;
+    color: #000000;
+    font-weight: bold;
+}
+.download:link,
+.download:visited,
+.download:hover,
+.download:active
+{
+    color: #000000;
+}
+.download:hover
+{
+    background-color: #99eeff;
+}
+.download:active
+{
+    background-color: #3399ff;
+}
+.other
+{
+    display: block;
+    position: absolute;
+    right: 106px;
+    top: 0;
+    padding: 10px;
+}
+.form
+{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    border-top: 1px solid #999;
+}
+.form div
+{
+    margin: 10px 0;
+}
+.form select
+{
+    width: 160px;
+}
+.submit
+{
+    display: block;
+    width: 85px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #999999;
+    box-shadow: 0 0 5px #999999;
+    text-align: center;
+    background-color: #66ccff;
+    color: #000000;
+    font-weight: bold;
+}
+.submit:link,
+.submit:visited,
+.submit:hover,
+.submit:active
+{
+    color: #000000;
+}
+.submit:hover
+{
+    background-color: #99eeff;
+}
+.submit:active
+{
+    background-color: #3399ff;
+}
+.submit.disabled,
+.submit.disabled:link,
+.submit.disabled:visited,
+.submit.disabled:hover,
+.submit.disabled:active
+{
+    background-color: #cccccc;
+}
+.collapse
+{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}

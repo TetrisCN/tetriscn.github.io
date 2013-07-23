@@ -10,6 +10,36 @@ $(function(){
             "zh":"下载",
             "en":"Download",
             "jp":"Download"
+        },
+        "other":{
+            "zh":"其他下载",
+            "en":"Other download",
+            "jp":"Other download"
+        },
+        "platform":{
+            "zh":"操作系统",
+            "en":"Operating System",
+            "jp":"Operating System"
+        },
+        "language":{
+            "zh":"语言",
+            "en":"Language",
+            "jp":"Language"
+        },
+        "version":{
+            "zh":"版本",
+            "en":"Version",
+            "jp":"Version"
+        },
+        "submit":{
+            "zh":"下载",
+            "en":"Download",
+            "jp":"Download"
+        },
+        "collapse":{
+            "zh":"收起",
+            "en":"Collapse",
+            "jp":"Collapse"
         }
     };
     var data={
@@ -56,8 +86,103 @@ $(function(){
                     url+="en/"+data[name][platform]["en"][0];
                     text+=label["en"]+"/"+data[name][platform]["en"][0];
                 }
-                $("<div></div>").addClass("download-text").html(text).appendTo(item);
-                $("<a></a>").attr("href","/d/?"+url).addClass("download").html(label.download[language]).appendTo(item);
+                var download=$("<a></a>")
+                    .attr("href","/d/?"+url)
+                    .attr("title",text)
+                    .attr("target","_blank")
+                    .addClass("download")
+                    .html(label.download[language])
+                    .appendTo(item);
+                var other=$("<a></a>")
+                    .attr("href","#")
+                    .addClass("other")
+                    .html(label.other[language])
+                    .on("click",function(e){
+                        download.hide();
+                        other.hide();
+                        form.show();
+                        collapse.show();
+                        e.preventDefault();
+                    })
+                    .appendTo(item);
+                var form=$("<div></div>")
+                    .addClass("form")
+                    .hide()
+                    .appendTo(item);
+                $("<label></label>")
+                    .html(label.platform[language])
+                    .appendTo($("<div></div>").appendTo(form));
+                var select_platform=$("<select></select>")
+                    .on("change",function(){
+                        select_language
+                            .find("option")
+                                .hide()
+                                .filter("[value^='"+select_platform.val()+"']")
+                                    .show();
+                    })
+                    .appendTo($("<div></div>").appendTo(form));
+                $("<label></label>")
+                    .html(label.language[language])
+                    .appendTo($("<div></div>").appendTo(form));
+                var select_language=$("<select></select>")
+                    .on("change",function(){
+                        select_version
+                            .find("option")
+                                .hide()
+                                .filter("[value^='"+select_language.val()+"']")
+                                    .show();
+                    })
+                    .appendTo($("<div></div>").appendTo(form));
+                $("<label></label>")
+                    .html(label.version[language])
+                    .appendTo($("<div></div>").appendTo(form));
+                var select_version=$("<select></select>")
+                    .on("change",function(){
+                        submit.removeClass("disabled");
+                        submit.attr("href",select_version.val());
+                    })
+                    .appendTo($("<div></div>").appendTo(form));
+                var submit=$("<a></a>")
+                    .addClass("submit")
+                    .html(label.submit[language])
+                    .addClass("disabled")
+                    .appendTo($("<div></div>").appendTo(form));
+                var collapse=$("<a></a>")
+                    .attr("href","#")
+                    .addClass("collapse")
+                    .html(label.collapse[language])
+                    .on("click",function(e){
+                        download.show();
+                        other.show();
+                        form.hide();
+                        collapse.hide();
+                        e.preventDefault();
+                    })
+                    .hide()
+                    .appendTo(item);
+                $.each(data[name],function(platform,obj){
+                    $("<option></option>")
+                        .attr("value",platform)
+                        .html(label[platform])
+                        .appendTo(select_platform);
+                    $.each(obj,function(language,obj){
+                        $("<option></option>")
+                            .attr("value",platform+"/"+language)
+                            .html(label[language])
+                            .hide()
+                            .appendTo(select_language);
+                        $.each(obj,function(index,version){
+                            $("<option></option>")
+                                .attr("value",platform+"/"+language+"/"+version)
+                                .html(version)
+                                .hide()
+                                .appendTo(select_version);
+                        });
+                    });
+                });
+                select_platform.prop("selectedIndex",-1);
+                select_language.prop("selectedIndex",-1);
+                select_version.prop("selectedIndex",-1);
             }
         }
     });
