@@ -127,6 +127,9 @@ $(function(){
                                 .show();
                     select_language.prop("selectedIndex",-1);
                     select_version.prop("selectedIndex",-1);
+                    submit
+                        .removeAttr("href")
+                        .addClass("disabled");
                 })
                 .appendTo($("<div></div>").appendTo(form));
             $("<label></label>")
@@ -140,6 +143,9 @@ $(function(){
                             .filter("[value^='"+select_language.val()+"']")
                                 .show();
                     select_version.prop("selectedIndex",-1);
+                    submit
+                        .removeAttr("href")
+                        .addClass("disabled");
                 })
                 .appendTo($("<div></div>").appendTo(form));
             $("<label></label>")
