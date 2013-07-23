@@ -125,6 +125,8 @@ $(function(){
                             .hide()
                             .filter("[value^='"+select_platform.val()+"']")
                                 .show();
+                    select_language.prop("selectedIndex",-1);
+                    select_version.prop("selectedIndex",-1);
                 })
                 .appendTo($("<div></div>").appendTo(form));
             $("<label></label>")
@@ -137,6 +139,7 @@ $(function(){
                             .hide()
                             .filter("[value^='"+select_language.val()+"']")
                                 .show();
+                    select_version.prop("selectedIndex",-1);
                 })
                 .appendTo($("<div></div>").appendTo(form));
             $("<label></label>")
