@@ -154,7 +154,7 @@ $(function(){
             var select_version=$("<select></select>")
                 .on("change",function(){
                     submit.removeClass("disabled");
-                    submit.attr("href",select_version.val());
+                    submit.attr("href","/d/?"+select_version.val());
                 })
                 .appendTo($("<div></div>").appendTo(form));
             var submit=$("<a></a>")
