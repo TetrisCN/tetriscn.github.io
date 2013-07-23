@@ -76,6 +76,7 @@ $(function(){
         var item=$(this);
         var name=item.data("name");
         if(data[name]){
+            var description=item.find(".description");
             var download=$("<a></a>")
                 .attr("target","_blank")
                 .addClass("download")
@@ -104,6 +105,7 @@ $(function(){
                 .on("click",function(e){
                     download.hide();
                     other.hide();
+                    description.hide();
                     form.show();
                     collapse.show();
                     e.preventDefault();
@@ -158,6 +160,7 @@ $(function(){
                 .on("click",function(e){
                     download.show();
                     other.show();
+                    description.show();
                     form.hide();
                     collapse.hide();
                     e.preventDefault();

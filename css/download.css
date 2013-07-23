@@ -41,6 +41,12 @@ body
     line-height: 30px;
     font-weight: bold;
 }
+.description
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #999;
+}
 .download
 {
     display: block;
