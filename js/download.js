@@ -77,6 +77,61 @@ $(function(){
         var name=item.data("name");
         if(data[name]){
             var description=item.find(".description");
+            var form=$("<div></div>")
+                .addClass("form")
+                .hide()
+                .appendTo(item);
+            $("<label></label>")
+                .html(label.platform[language])
+                .appendTo($("<div></div>").appendTo(form));
+            var select_platform=$("<select></select>")
+                .on("change",function(){
+                    language_option
+                        .detach()
+                        .filter("[value^='"+select_platform.val()+"']")
+                            .appendTo(select_language);
+                    version_option.detach();
+                    select_language.prop("selectedIndex",-1);
+                    select_version.prop("selectedIndex",-1);
+                    submit
+                        .removeAttr("href")
+                        .addClass("disabled");
+                })
+                .appendTo($("<div></div>").appendTo(form));
+            $("<label></label>")
+                .html(label.language[language])
+                .appendTo($("<div></div>").appendTo(form));
+            var select_language=$("<select></select>")
+                .on("change",function(){
+                    version_option
+                        .detach()
+                        .filter("[value^='"+select_language.val()+"']")
+                            .appendTo(select_version);
+                    select_version.prop("selectedIndex",-1);
+                    submit
+                        .removeAttr("href")
+                        .addClass("disabled");
+                })
+                .appendTo($("<div></div>").appendTo(form));
+            $("<label></label>")
+                .html(label.version[language])
+                .appendTo($("<div></div>").appendTo(form));
+            var select_version=$("<select></select>")
+                .on("change",function(){
+                    submit.removeClass("disabled");
+                    submit.attr("href","/d/?"+select_version.val());
+                })
+                .appendTo($("<div></div>").appendTo(form));
+            var submit=$("<a></a>")
+                .attr("target","_blank")
+                .addClass("submit")
+                .html(label.submit[language])
+                .addClass("disabled")
+                .appendTo($("<div></div>").appendTo(form));
+            //Fuck IE 8
+            $("<div></div>")
+                .addClass("fix")
+                .appendTo(item);
             var download=$("<a></a>")
                 .attr("target","_blank")
                 .addClass("download")
@@ -111,58 +166,6 @@ $(function(){
                     e.preventDefault();
                 })
                 .appendTo(item);
-            var form=$("<div></div>")
-                .addClass("form")
-                .hide()
-                .appendTo(item);
-            $("<label></label>")
-                .html(label.platform[language])
-                .appendTo($("<div></div>").appendTo(form));
-            var select_platform=$("<select></select>")
-                .on("change",function(){
-                    select_language
-                        .find("option")
-                            .hide()
-                            .filter("[value^='"+select_platform.val()+"']")
-                                .show();
-                    select_language.prop("selectedIndex",-1);
-                    select_version.prop("selectedIndex",-1);
-                    submit
-                        .removeAttr("href")
-                        .addClass("disabled");
-                })
-                .appendTo($("<div></div>").appendTo(form));
-            $("<label></label>")
-                .html(label.language[language])
-                .appendTo($("<div></div>").appendTo(form));
-            var select_language=$("<select></select>")
-                .on("change",function(){
-                    select_version
-                        .find("option")
-                            .hide()
-                            .filter("[value^='"+select_language.val()+"']")
-                                .show();
-                    select_version.prop("selectedIndex",-1);
-                    submit
-                        .removeAttr("href")
-                        .addClass("disabled");
-                })
-                .appendTo($("<div></div>").appendTo(form));
-            $("<label></label>")
-                .html(label.version[language])
-                .appendTo($("<div></div>").appendTo(form));
-            var select_version=$("<select></select>")
-                .on("change",function(){
-                    submit.removeClass("disabled");
-                    submit.attr("href","/d/?"+select_version.val());
-                })
-                .appendTo($("<div></div>").appendTo(form));
-            var submit=$("<a></a>")
-                .attr("target","_blank")
-                .addClass("submit")
-                .html(label.submit[language])
-                .addClass("disabled")
-                .appendTo($("<div></div>").appendTo(form));
             var collapse=$("<a></a>")
                 .attr("href","#")
                 .addClass("collapse")
@@ -186,20 +189,27 @@ $(function(){
                     $("<option></option>")
                         .attr("value",name+"/"+platform+"/"+language)
                         .html(label[language])
-                        .hide()
                         .appendTo(select_language);
                     $.each(obj,function(index,version){
                         $("<option></option>")
                             .attr("value",name+"/"+platform+"/"+language+"/"+version)
                             .html(version)
-                            .hide()
                             .appendTo(select_version);
                     });
                 });
             });
+            var platform_option=select_platform.find("option");
+            var language_option=select_language.find("option");
+            var version_option=select_version.find("option");
+            language_option.detach();
+            version_option.detach();
             select_platform.prop("selectedIndex",-1);
             select_language.prop("selectedIndex",-1);
             select_version.prop("selectedIndex",-1);
         }
     });
+    //Fuck IE 7
+    $("<div></div>")
+        .addClass("fix")
+        .appendTo($("body"));
 });
