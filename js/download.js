@@ -58,9 +58,9 @@ $(function(){
             "jp":"Back"
         },
         "mirror":{
-            "zh":"镜像站点",
-            "en":"Mirror site",
-            "jp":"Mirror site"
+            "zh":"镜像站点：",
+            "en":"Mirror site:",
+            "jp":"Mirror site:"
         },
         "mirror/baidu":{
             "zh":"百度网盘",
@@ -73,9 +73,9 @@ $(function(){
             "jp":"1000Eb"
         },
         "site":{
-            "zh":"转到镜像站点",
-            "en":"Go to mirror site",
-            "jp":"Go to mirror site"
+            "zh":"|>>",
+            "en":"|>>",
+            "jp":"|>>"
         },
         "select":{
             "zh":"请选择其他镜像站点！",
@@ -354,6 +354,7 @@ $(function(){
         item.attr("id","game-"+name);
         var to=$("<a></a>")
             .attr("href","#"+name)
+            .addClass("hash")
             .html("#")
             .data("to",name)
             .prependTo(item.find(".name"));
@@ -531,6 +532,8 @@ $(function(){
             select_platform.prop("selectedIndex",-1);
             select_language.prop("selectedIndex",-1);
             select_version.prop("selectedIndex",-1);
+        }else{
+            item.addClass("none");
         }
     });
     //Fuck IE 7
@@ -551,11 +554,12 @@ $(function(){
         }
         var to=a.data("to");
         if(to){
-            window.scrollTo(window.scrollX,$("#game-"+to).offset().top-71);
+            $(".item").removeClass("target");
+            window.scrollTo(window.scrollX,$("#game-"+to).addClass("target").offset().top-71);
         }
     });
     var hash=location.hash.replace(/^#/,"");
     if(hash){
-        window.scrollTo(window.scrollX,$("#game-"+hash).offset().top-71);
+        window.scrollTo(window.scrollX,$("#game-"+hash).addClass("target").offset().top-71);
     }
 });

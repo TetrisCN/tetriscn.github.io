@@ -29,17 +29,16 @@ body
 }
 .head
 {
-    width: 800px;
+    width: 860px;
     left: 50%;
     top: 0;
-    margin-left: -411px;
+    margin-left: -446px;
     border: 1px solid #999999;
     border-top: none;
-    border-radius: 0 0 5px 5px;
-    background-color: #eeeeee;
+    border-radius: 0 0 10px 10px;
+    background-color: #ccffcc;
     box-shadow: 0 0 5px #999999;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 10px 15px;
     position: fixed;
     _position: absolute;
     z-index: 9999;
@@ -55,7 +54,7 @@ body
     position: absolute;
     right: 0;
     top: 0;
-    margin: 10px;
+    margin: 10px 15px;
     vertical-align: center;
 }
 .mirror select
@@ -69,13 +68,43 @@ body
     width: 720px;
     margin: 0 auto;
     border: 1px solid #999999;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: #eeeeee;
     box-shadow: 0 0 5px #999999;
     padding: 10px;
     margin-bottom: 10px;
     position: relative;
     overflow: hidden;
+}
+.item.target
+{
+    background-color: #ffffcc;
+}
+.item.none
+{
+    background-color: #cccccc;
+}
+.item.none.target
+{
+    background-color: #ffff99;
+}
+.item.target .hash,
+.item.target .hash:link,
+.item.target .hash:visited,
+.item.target .hash:hover,
+.item.target .hash:active
+{
+    color: #ff0000;
+}
+.item-child
+{
+    width: 742px;
+    margin: 0 auto;
+}
+.item-child .item
+{
+    width: auto;
+    margin-left: 40px;
 }
 .name
 {
@@ -92,13 +121,13 @@ body
 {
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #999;
+    border-top: 1px solid #999999;
 }
 .form
 {
     margin-top: 10px;
     margin-bottom: -10px;
-    border-top: 1px solid #999;
+    border-top: 1px solid #999999;
 }
 .form div
 {
@@ -155,7 +184,7 @@ body
 {
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #999;
+    border-top: 1px solid #999999;
 }
 .list div
 {
