@@ -559,6 +559,27 @@ $(function(){
         }
     });
     var hash=location.hash.replace(/^#/,"");
+    var map={
+        "np":"nullpomino",
+        "np-league":"nullpomino-league",
+        "tgm1":"tgm",
+        "tgm2":"ta",
+        "tgm2p":"ta",
+        "tap":"ta",
+        "tgm3":"ti",
+        "cul":"cultris",
+        "c2":"cultris",
+        "heb":"heboris",
+        "hebo":"heboris",
+        "nds":"group-nds",
+        "tex":"texmaster",
+        "zone":"tetris-zone",
+        "inf":"infinitris"
+    };
+    if(map[hash]){
+        hash=map[hash];
+        location.hash="#"+hash;
+    }
     if(hash){
         window.scrollTo(window.scrollX,$("#game-"+hash).addClass("target").offset().top-71);
     }
