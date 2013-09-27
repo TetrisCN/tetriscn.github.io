@@ -27,6 +27,11 @@ body
     margin: 0 10px;
     padding-top: 71px;
 }
+.highlight
+{
+    color: red;
+    font-weight: bold;
+}
 .head
 {
     width: 860px;
@@ -87,14 +92,6 @@ body
 .item.none.target
 {
     background-color: #ffff99;
-}
-.item.target .hash,
-.item.target .hash:link,
-.item.target .hash:visited,
-.item.target .hash:hover,
-.item.target .hash:active
-{
-    color: #ff0000;
 }
 .item-child
 {

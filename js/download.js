@@ -148,7 +148,8 @@ $(function(){
             "dos/win/en/latest":"http://pan.baidu.com/share/link?shareid=2782253754&uk=2618701916",
             "texmaster/win/en/2009.1":"http://pan.baidu.com/share/link?shareid=2798580894&uk=2618701916",
             "texmaster/win/en/2009.2":"http://pan.baidu.com/share/link?shareid=2799247508&uk=2618701916",
-            "texmaster/win/en/2009.3":"http://pan.baidu.com/share/link?shareid=2800071254&uk=2618701916"
+            "texmaster/win/en/2009.3":"http://pan.baidu.com/share/link?shareid=2800071254&uk=2618701916",
+            "misaka-ai/win/en/latest":"http://pan.baidu.com/share/link?uk=3406403076&shareid=2252410200#dir/path=%2Ftetris"
         },
         "1000eb":{
             "dtet/win/en/latest":"http://1000eb.com/2r7j",
@@ -292,6 +293,11 @@ $(function(){
         "texmaster":{
             "win":{
                 "en":["2009.1","2009.2","2009.3"]
+            }
+        },
+        "misaka-ai":{
+            "win":{
+                "en":["latest"]
             }
         }
     };
