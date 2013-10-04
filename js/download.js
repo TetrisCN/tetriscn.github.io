@@ -72,11 +72,6 @@ $(function(){
             "en":"1000Eb",
             "jp":"1000Eb"
         },
-        "site":{
-            "zh":"|>>",
-            "en":"|>>",
-            "jp":"|>>"
-        },
         "select":{
             "zh":"请选择其他镜像站点！",
             "en":"Please select another mirror site!",
@@ -92,14 +87,18 @@ $(function(){
         "1000eb":"http://tetris.1000eb.com/"
     };
     var urls={
+        "__default__":{
+            "jre/os-all/zh/latest":"http://java.com/zh_CN/download/",
+            "misaka-ai/win/en/latest":"http://harddrop.com/forums/index.php?showtopic=5292"
+        },
         "baidu":{
             "cultris/win/en/1":"http://pan.baidu.com/share/link?shareid=1616487568&uk=2618701916",
             "cultris/win/en/2":"http://pan.baidu.com/share/link?shareid=1937813612&uk=2618701916",
             "cultris/mac/en/2":"http://pan.baidu.com/share/link?shareid=1940998029&uk=2618701916",
             "dtet/win/en/latest":"http://pan.baidu.com/share/link?shareid=1957600425&uk=2618701916",
-            "other/dx7vb":"http://pan.baidu.com/share/link?shareid=1964841147&uk=2618701916",
+            "dx7vb/win/en/latest":"http://pan.baidu.com/share/link?shareid=1964841147&uk=2618701916",
             "nes/os-all/en/latest":"http://pan.baidu.com/share/link?shareid=2204261983&uk=2618701916",
-            "other/virtua-nes":"http://pan.baidu.com/share/link?shareid=2212731436&uk=2618701916",
+            "virtua-nes/win/en/latest":"http://pan.baidu.com/share/link?shareid=2212731436&uk=2618701916",
             "heboris/win/en/Original":"http://pan.baidu.com/share/link?shareid=2308646924&uk=2618701916",
             "heboris/win/en/Lite":"http://pan.baidu.com/share/link?shareid=2309953289&uk=2618701916",
             "heboris/win/en/Mini":"http://pan.baidu.com/share/link?shareid=2310919787&uk=2618701916",
@@ -111,7 +110,7 @@ $(function(){
             "ltap/win/en/latest":"http://pan.baidu.com/share/link?shareid=2343584086&uk=2618701916",
             "nds-tetris-ds/os-all/en/latest":"http://pan.baidu.com/share/link?shareid=2466652770&uk=2618701916",
             "nds-tetris-party/os-all/en/latest":"http://pan.baidu.com/share/link?shareid=2473797714&uk=2618701916",
-            "other/no-zoomer":"http://pan.baidu.com/share/link?shareid=2478044277&uk=2618701916",
+            "no-zoomer/win/en/latest":"http://pan.baidu.com/share/link?shareid=2478044277&uk=2618701916",
             "nullpomino/os-all/en/7.2.0":"http://pan.baidu.com/share/link?shareid=2533395713&uk=2618701916",
             "nullpomino/os-all/en/7.3.0":"http://pan.baidu.com/share/link?shareid=2534269418&uk=2618701916",
             "nullpomino/os-all/en/7.4.0":"http://pan.baidu.com/share/link?shareid=2535285660&uk=2618701916",
@@ -122,7 +121,6 @@ $(function(){
             "nullpomino/mac/en/7.5.0":"http://pan.baidu.com/share/link?shareid=2543054988&uk=2618701916",
             "nullpomino/linux/en/7.4.0":"http://pan.baidu.com/share/link?shareid=2543926156&uk=2618701916",
             "nullpomino/linux/en/7.5.0":"http://pan.baidu.com/share/link?shareid=2545172203&uk=2618701916",
-            "other/jre":"http://java.com/zh_CN/download/",
             "nullpomino-league/os-all/en/Beta":"http://pan.baidu.com/share/link?shareid=2578142682&uk=2618701916",
             "nullpomino-league/os-all/en/Beta 0.3":"http://pan.baidu.com/share/link?shareid=2578998036&uk=2618701916",
             "nullpomino-league/os-all/en/Beta 0.4":"http://pan.baidu.com/share/link?shareid=2580072955&uk=2618701916",
@@ -135,51 +133,48 @@ $(function(){
             "top/win/zh/0.5":"http://pan.baidu.com/share/link?shareid=2646069615&uk=2618701916",
             "top/win/en/latest":"http://pan.baidu.com/share/link?shareid=2647152892&uk=2618701916",
             "top/win/jp/latest":"http://pan.baidu.com/share/link?shareid=2648122215&uk=2618701916",
-            "other/dotnet/3.5":"http://pan.baidu.com/share/link?shareid=2649557595&uk=2618701916",
+            "dotnet-3.5/win/zh/latest":"http://pan.baidu.com/share/link?shareid=2649557595&uk=2618701916",
             "tgm/win/en/latest":"http://pan.baidu.com/share/link?shareid=2675659961&uk=2618701916",
             "ta/win/en/latest":"http://pan.baidu.com/share/link?shareid=2716380023&uk=2618701916",
             "ti/win/en/BGM 1":"http://pan.baidu.com/share/link?shareid=2740646591&uk=2618701916",
             "ti/win/en/BGM 2":"http://pan.baidu.com/share/link?shareid=2741488584&uk=2618701916",
             "ti/win/en/lite":"http://pan.baidu.com/share/link?shareid=2742674561&uk=2618701916",
             "ti/win/en/full":"http://pan.baidu.com/share/link?shareid=2743507907&uk=2618701916",
-            "other/bbsreader":"http://pan.baidu.com/share/link?shareid=2744488401&uk=2618701916",
+            "bbsreader/win/en/latest":"http://pan.baidu.com/share/link?shareid=2744488401&uk=2618701916",
             "tetris-zone/win/en/1.2.1":"http://pan.baidu.com/share/link?shareid=2768176389&uk=2618701916",
             "tetris-zone/mac/en/1.2.1":"http://pan.baidu.com/share/link?shareid=2769200514&uk=2618701916",
             "dos/win/en/latest":"http://pan.baidu.com/share/link?shareid=2782253754&uk=2618701916",
             "texmaster/win/en/2009.1":"http://pan.baidu.com/share/link?shareid=2798580894&uk=2618701916",
             "texmaster/win/en/2009.2":"http://pan.baidu.com/share/link?shareid=2799247508&uk=2618701916",
-            "texmaster/win/en/2009.3":"http://pan.baidu.com/share/link?shareid=2800071254&uk=2618701916",
-            "misaka-ai/win/en/latest":"http://harddrop.com/forums/index.php?showtopic=5292"
+            "texmaster/win/en/2009.3":"http://pan.baidu.com/share/link?shareid=2800071254&uk=2618701916"
         },
         "1000eb":{
             "dtet/win/en/latest":"http://1000eb.com/2r7j",
-            "other/dx7vb":"http://1000eb.com/2r7j",
+            "dx7vb/win/en/latest":"http://1000eb.com/2r7j",
             "nes/os-all/en/latest":"http://1000eb.com/2s7z",
-            "other/virtua-nes":"http://1000eb.com/2s7y",
+            "virtua-nes/win/en/latest":"http://1000eb.com/2s7y",
             "heboris/win/en/Original":"http://1000eb.com/2r7a",
             "heboris/win/en/C8EX Full":"http://1000eb.com/2r76",
             "infinitris/win/zh/3.2.35":"http://1000eb.com/2s76",
             "infinitris/win/zh/3.2.40":"http://1000eb.com/2s1h",
             "nds-tetris-ds/os-all/en/latest":"http://1000eb.com/2s7q",
             "nds-tetris-party/os-all/en/latest":"http://1000eb.com/2s7s",
-            "other/no-zoomer":"http://1000eb.com/2s7p",
+            "no-zoomer/win/en/latest":"http://1000eb.com/2s7p",
             "nullpomino/os-all/en/7.5.0":"http://1000eb.com/2s6u",
             "nullpomino/win/zh/7.5.0":"http://1000eb.com/9seg",
-            "other/jre":"http://1000eb.com/2s6y",
             "t-ex/os-all/zh/latest":"http://tetris.1000eb.com/mydirectory_12909_4257.htm",
             "top/win/zh/0.5":"http://1000eb.com/9ayq",
             "top/win/en/latest":"http://1000eb.com/au2i",
-            "other/dotnet/3.5":"http://1000eb.com/3trn",
+            "dotnet-3.5/win/zh/latest":"http://1000eb.com/3trn",
             "tgm/win/en/latest":"http://1000eb.com/2r6o",
             "ta/win/en/latest":"http://1000eb.com/2r6t",
             "ti/win/en/BGM 1":"http://1000eb.com/2s4v",
             "ti/win/en/BGM 2":"http://1000eb.com/2s5k",
             "ti/win/en/lite":"http://1000eb.com/2r6x",
             "ti/win/en/full":"http://1000eb.com/gntn",
-            "other/bbsreader":"http://1000eb.com/2r71",
+            "bbsreader/win/en/latest":"http://1000eb.com/2r71",
             "dos/win/en/latest":"http://1000eb.com/2s34",
-            "texmaster/win/en/2009.3":"http://1000eb.com/2s32",
-            "misaka-ai/win/en/latest":"http://harddrop.com/forums/index.php?showtopic=5292"
+            "texmaster/win/en/2009.3":"http://1000eb.com/2s32"
         }
     };
     var data={
@@ -196,8 +191,18 @@ $(function(){
                 "en":["latest"]
             }
         },
+        "dx7vb":{
+            "win":{
+                "en":["latest"]
+            }
+        },
         "nes":{
             "os-all":{
+                "en":["latest"]
+            }
+        },
+        "virtua-nes":{
+            "win":{
                 "en":["latest"]
             }
         },
@@ -226,6 +231,11 @@ $(function(){
                 "en":["latest"]
             }
         },
+        "no-zoomer":{
+            "win":{
+                "en":["latest"]
+            }
+        },
         "nullpomino":{
             "os-all":{
                 "en":["7.2.0","7.3.0","7.4.0","7.5.0"]
@@ -246,6 +256,11 @@ $(function(){
                 "en":["Beta","Beta 0.3","Beta 0.4","Beta 0.5"]
             }
         },
+        "jre":{
+            "os-all":{
+                "zh":["latest"]
+            }
+        },
         "t-ex":{
             "os-all":{
                 "zh":["latest"]
@@ -263,6 +278,11 @@ $(function(){
                 "jp":["latest"]
             }
         },
+        "dotnet-3.5":{
+            "win":{
+                "zh":["latest"]
+            }
+        },
         "tgm":{
             "win":{
                 "en":["latest"]
@@ -276,6 +296,11 @@ $(function(){
         "ti":{
             "win":{
                 "en":["BGM 1","BGM 2","lite","full"]
+            }
+        },
+        "bbsreader":{
+            "win":{
+                "en":["latest"]
             }
         },
         "tetris-zone":{
@@ -339,7 +364,7 @@ $(function(){
         .appendTo(mirror_list);
     var home_page=$("<a></a>")
         .attr("href","#")
-        .html(label.site[language])
+        .html("<img src='/img/external.png' />")
         .on("click",function(e){
             var url=site[select_mirror.val()];
             if(url){
@@ -554,6 +579,8 @@ $(function(){
             var site=select_mirror.val();
             if(urls[site] && urls[site][url]){
                 window.open(urls[site][url],"_blank");
+            }else if(urls.__default__[url]){
+                window.open(urls.__default__[url],"_blank");
             }else{
                 alert(label.select[language]);
             }

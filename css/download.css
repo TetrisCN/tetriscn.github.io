@@ -103,6 +103,11 @@ body
     width: auto;
     margin-left: 40px;
 }
+.item-child .item-child
+{
+    width: auto;
+    margin-left: 40px;
+}
 .name
 {
     font-size: 20px;
