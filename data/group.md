@@ -14,7 +14,7 @@
 
 ## YY群
 
-* [48406063](http://www.yy.com/go.html#48406063)
+* [48406064](http://www.yy.com/go.html#48406064)
 
 ## IRC
 
